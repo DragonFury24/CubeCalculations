@@ -7,7 +7,7 @@ public class CubeMain {
 
         System.out.println("Please enter the length of");
         System.out.println("1 side of the cube you're trying");
-        System.out.println("to find the surface of as whole number.");
+        System.out.println("to find the surface of as a whole number.");
         int length = intInput(keyboard);
         System.out.println("The surface area of this cube is " + Math.pow(length, 2) * 6);
     }
@@ -17,7 +17,7 @@ public class CubeMain {
 
         while (iInput == -1) {
             try {
-                iInput = keyboard.nextDouble();
+                iInput = keyboard.nextInt();
 
                 if (iInput < 0) {
                     iInput = -1;
