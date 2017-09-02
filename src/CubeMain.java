@@ -13,14 +13,14 @@ public class CubeMain {
     }
 
     public static int intInput(Scanner keyboard){ //checks if input is a int. If not, then will give error and force user to retry
-        int iInput = -1;
+        int iOutput = -1;
 
-        while (iInput == -1) {
+        while (iOutput == -1) {
             try {
-                iInput = keyboard.nextInt();
+                iOutput = keyboard.nextInt();
 
-                if (iInput < 0) {
-                    iInput = -1;
+                if (iOutput < 0) {
+                    iOutput = -1;
                     System.out.println("You put in a number less than 0. Please try again.");
                 }
             } catch (InputMismatchException I) {
@@ -29,6 +29,6 @@ public class CubeMain {
             }
         }
 
-        return iInput;
+        return iOutput;
     }
 }
